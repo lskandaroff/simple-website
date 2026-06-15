@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Profile</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile-card{
+    width:350px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.cover{
+    height:120px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-top:-60px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+h2{
+    color:#333;
+    margin-bottom:5px;
+}
+
+.job{
+    color:#777;
+    margin-bottom:15px;
+}
+
+.bio{
+    color:#555;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:20px;
+}
+
+.stats div{
+    text-align:center;
+}
+
+.stats h3{
+    color:#0072ff;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#0072ff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0056d6;
+}
+</style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="cover"></div>
+
+    <img src="https://via.placeholder.com/120" alt="Profile" class="avatar">
+
+    <div class="content">
+        <h2>Yusuf</h2>
+        <p class="job">Web Developer</p>
+
+        <p class="bio">
+            HTML, CSS va JavaScript bilan zamonaviy saytlar yarataman.
+        </p>
+
+        <div class="stats">
+            <div>
+                <h3>120</h3>
+                <p>Post</p>
+            </div>
+            <div>
+                <h3>5K</h3>
+                <p>Followers</p>
+            </div>
+            <div>
+                <h3>300</h3>
+                <p>Following</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn">Follow</a>
+    </div>
+</div>
+
+</body>
+</html>
